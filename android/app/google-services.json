@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "88964475710",
+    "project_id": "shortz-73b93",
+    "storage_bucket": "shortz-73b93.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:88964475710:android:ecca3cbcd60435cf6b5a6f",
+        "android_client_info": {
+          "package_name": "com.example.shortz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "88964475710-t3sopd3a8lle7hm47njtg3kn93dq2cdl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZ6AsDYTUAqtXVBw5GyOgIhKXOp3RJZH0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "88964475710-t3sopd3a8lle7hm47njtg3kn93dq2cdl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
