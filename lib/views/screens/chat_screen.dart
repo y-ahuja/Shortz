@@ -33,10 +33,10 @@ class _ChatScreenState extends State<ChatScreen> {
                     child: Row(
                       children: [
                         Container(
-                          padding: EdgeInsets.all(2),
+                          padding: const EdgeInsets.all(2),
                           decoration: BoxDecoration(
                             border: Border.all(width: 2, color: buttonColor),
-                            borderRadius: BorderRadius.all(
+                            borderRadius: const BorderRadius.all(
                               Radius.circular(40),
                             ),
                             boxShadow: [
@@ -46,7 +46,7 @@ class _ChatScreenState extends State<ChatScreen> {
                                   blurRadius: 5),
                             ],
                           ),
-                          child: CircleAvatar(
+                          child: const CircleAvatar(
                             backgroundColor: buttonColor,
                             radius: 35,
                           ),

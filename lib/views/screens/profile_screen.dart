@@ -59,17 +59,32 @@ class _ProfileScreenState extends State<ProfileScreen> {
                           Row(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
-                              ClipOval(
-                                child: CachedNetworkImage(
-                                  fit: BoxFit.cover,
-                                  imageUrl: controller.user['profilePhoto'],
-                                  height: 100,
-                                  width: 100,
-                                  placeholder: (context, url) =>
-                                      const CircularProgressIndicator(),
-                                  errorWidget: (context, url, error) =>
-                                      const Icon(
-                                    Icons.error,
+                              Container(
+                                decoration: BoxDecoration(
+                                  border:
+                                      Border.all(width: 2, color: buttonColor),
+                                  borderRadius: const BorderRadius.all(
+                                    Radius.circular(80),
+                                  ),
+                                  boxShadow: [
+                                    BoxShadow(
+                                        color: Colors.grey.withOpacity(0.5),
+                                        spreadRadius: 2,
+                                        blurRadius: 5),
+                                  ],
+                                ),
+                                child: ClipOval(
+                                  child: CachedNetworkImage(
+                                    fit: BoxFit.cover,
+                                    imageUrl: controller.user['profilePhoto'],
+                                    height: 100,
+                                    width: 100,
+                                    placeholder: (context, url) =>
+                                        const CircularProgressIndicator(),
+                                    errorWidget: (context, url, error) =>
+                                        const Icon(
+                                      Icons.error,
+                                    ),
                                   ),
                                 ),
                               )
