@@ -13,6 +13,7 @@ class _ChatScreenState extends State<ChatScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: buttonColor,
         elevation: 8,
         title: const Text("Inbox"),
         actions: [IconButton(onPressed: () {}, icon: const Icon(Icons.search))],
@@ -75,7 +76,6 @@ class _ChatScreenState extends State<ChatScreen> {
                                     style: TextStyle(
                                       fontSize: 11,
                                       fontWeight: FontWeight.w300,
-                                      color: Colors.black54,
                                     ),
                                   ),
                                 ],
@@ -89,7 +89,6 @@ class _ChatScreenState extends State<ChatScreen> {
                                   'Hello',
                                   style: TextStyle(
                                     fontSize: 13,
-                                    color: Colors.black54,
                                   ),
                                   overflow: TextOverflow.ellipsis,
                                   maxLines: 2,

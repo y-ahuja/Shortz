@@ -35,6 +35,15 @@ class _ProfileScreenState extends State<ProfileScreen> {
 
         return Scaffold(
           appBar: AppBar(
+            leading: IconButton(
+                icon: Get.isDarkMode
+                    ? Icon(Icons.wb_sunny_rounded)
+                    : Icon(Icons.nightlight_rounded),
+                onPressed: () {
+                  Get.isDarkMode
+                      ? Get.changeTheme(ThemeData.light())
+                      : Get.changeTheme(ThemeData.dark());
+                }),
             backgroundColor: buttonColor,
             actions: [
               IconButton(icon: const Icon(Icons.more_vert), onPressed: () {}),
@@ -175,9 +184,8 @@ class _ProfileScreenState extends State<ProfileScreen> {
                             width: 140,
                             height: 47,
                             decoration: BoxDecoration(
-                              border: Border.all(
-                                color: Colors.black12,
-                              ),
+                              borderRadius: BorderRadius.circular(7),
+                              border: Border.all(color: buttonColor),
                             ),
                             child: Center(
                               child: InkWell(

@@ -25,8 +25,14 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSwatch().copyWith(
           primary: const Color(0xFFFFA000),
           secondary: const Color(0xFFFFC107),
+          primaryVariant: const Color(0xFFFFA000),
+          onPrimary: const Color(0xFFFFA000),
         ),
       ),
+      darkTheme: ThemeData.dark().copyWith(
+        primaryColor: const Color(0xFFFFA000),
+      ),
+      themeMode: ThemeMode.system,
       home: LoginScreen(),
     );
   }
